@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(245, 231, 234);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: inherit;
+    color: black;
+}
+
+h1{
+    border-bottom: red;
+    color: red;
+    font-size: 16px;
+}
+
+a:link{
+    color: rgb(22, 4, 70);
+    text-decoration: underline dotted rgb(250, 30, 184)
+    
+}
+
+a:hover{
+    background-color: rgb(241, 177, 238); 
+}
+
+a:visited{
+    color: rgb(12, 194, 179);
+}
+
+figcaption{
+    font-style: italic;
+    font-variant: small-caps;
+}
