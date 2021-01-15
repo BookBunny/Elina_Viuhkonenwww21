@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex layout example thingy cos im in a bad mood after python</title>
+<!------header background doesnt work, need to fix. link in .topmenu and -header.img  can it be retrieved from c drive and not from a website directly? also why is there a gap
+    between footer and main content and left bar?------>
+    <style>
+        .wrapper{
+            margin: auto;
+            width: 80%
+        }
+        .topmenu{
+            display: flex;
+            flex-flow: row wrap;
+            background: url(https://www.google.com/search?q=rainbow&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjgu66tjJ7uAhVniIsKHSGjD7EQ_AUoAXoECBcQAw&biw=1920&bih=880#imgrc=B7eX0jUSrboJzM);
+            justify-content: flex-end;
+            margin:0;
+            background-color: rgb(238, 168, 226);
+            height: 150px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50px
+        }
+        .topmenu >li{
+            list-style: none;
+            padding: 1em;
+            color: black;
+        }
+        .flexgrowcon{
+            display: flex;
+            align-items: stretch;
+        }
+        leftbar{
+            background-color: rgb(238, 168, 226);
+            min-height: 500px;
+            width: 600px;
+        }
+        footer{
+            background-color: rgb(238, 168, 226);
+            color: black;
+            height: 40px;
+            text-align: center;
+        }
+        article{
+            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        figcaption{
+            font-style: italic;
+            font-variant: small-caps;
+            font-size: smaller;
+        }
+        .header-img{
+            width: auto;
+            height:150px ;
+            background: url(https://www.google.com/search?q=rainbow&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjgu66tjJ7uAhVniIsKHSGjD7EQ_AUoAXoECBcQAw&biw=1920&bih=880#imgrc=B7eX0jUSrboJzM);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper"
+    <header>
+    <ul class="topmenu">
+        Rainbows and bunnies and all that shit
+    </ul>
+    </header>
+    <div class="flexgrowcon">
+        <leftbar style="flex-grow: 1;">
+        <li>About</li>
+        <li>Donate</li>
+        <li>Bunnies</li>
+        <li><a href="https://en.wikipedia.org/wiki/Rainbow" title="Rainbows">Rainbows</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=bunnies" title="Youtube">Youtube</a></li>
+        </leftbar>
+        <content style="flex-grow: 6;">
+           
+            <article>
+                <h2>Bunny</h2>
+                <figure></figure>
+           <img src="images/bunny1.jpg" alt="angry bunny" align:"left" >
+           <figcaption>Look, that's a bunny</figcaption>
+            </figure>
+                <p>Rabbits are small mammals in the family Leporidae of the order Lagomorpha (along with the hare and the pika). Oryctolagus cuniculus includes the European rabbit
+                species and its descendants, the world's 305 breeds[1] of domestic rabbit. Sylvilagus includes 13 wild rabbit species, among them the seven types of cottontail. The
+                European rabbit, which has been introduced on every continent except Antarctica, is familiar throughout the world as a wild prey animal and as a domesticated form of
+                livestock and pet. With its widespread effect on ecologies and cultures, the rabbit (or bunny) is, in many areas of the world, a part of daily life—as food, clothing,
+                a companion, and a source of artistic inspiration.</p>
+            </article>
+
+    <article>
+        <h2>A bunny video!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IWrK7sXK3Vw" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;
+        picture-in-picture" allowfullscreen></iframe>
+        <p>This is a video of a bunny. It's not my bunny 'cos mine are way cuter.</p>
+    </article>
+
+    <article>
+        <h2>House Rabbit Handbook</h2>
+        <h3>by Marinell Harriman</h3>
+        <img src="images/bunnybook.jpg" alt="House Rabbit Handbook" align:"left">
+        <p>Packed with the collected wisdom of bunny-lovers and charming, candid photos of their pets, this manual tells readers how to successfully integrate a rabbit into one's
+        life. Harriman includes the latest in veterinary information and helpful how-to sections on care and feeding. 100 photos. Charts.</p>
+    </article>
+        </content>
+    </div>
+    <footer>
+        <p>Copyright 2021 corona</p>
+    </footer>
+</div>
+</body>
+</html>
